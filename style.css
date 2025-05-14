@@ -1,0 +1,58 @@
+form{
+
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 12px #070707;
+
+}
+.titulo{
+    
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    width: 90%;
+    margin: 10px;
+    border-radius: 15px;
+
+}
+button{
+    margin: 8px;
+    padding: 4px;
+    position: relative;
+    margin-right: 10px;
+
+}
+button::after{
+    content: none;
+    position: absolute;
+    right: 3px;
+    top: -2px;
+    width: 100%;
+    height: 100%;
+    transition: 0.4 ease-in-out;
+    background: #ebd2d2;
+
+}
+button:hover::after{
+    max-width: 100%;
+
+}
+@media (max-width: 600px) {
+    .titulo {
+    width: 100%;
+    }
+}
+
+@media (min-width: 601px) {
+    .titulo{
+    width: 400px;
+    }
+    
+}
